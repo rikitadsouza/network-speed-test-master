@@ -1,0 +1,65 @@
+/* Apply a global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the background for the entire body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+/* Style the container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Style the heading */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Style the result */
+#result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Add a hover effect to the result */
+#result:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 30px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #result {
+        font-size: 1.2em;
+    }
+}
